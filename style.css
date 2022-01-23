@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+* {
+    font-family: Spectral, Arial;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+}
+
+#navbar header {
+    font-size: 28px;
+    background-color: whitesmoke;
+    padding: 10px 0 10px 20px;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 60px);
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 10px 0 10px 20px;
+    font-size: 28px;
+}
+
+#navbar a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+main {
+    position: absolute;
+    margin-left: 300px;
+}
+
+section {
+    padding-left: 15px;
+}
+
+section header {
+    font-size: 40px;
+}
+
+code {
+    font-family: monospace;
+    display: block;
+    background-color: #FFC300;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        width: 150px;
+    }
+
+    #navbar header {
+        font-size: 15px;
+    }
+
+    #navbar ul {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: calc(100vh - 65px);
+    }
+
+    #navbar a {
+        display: block;
+        text-decoration: none;
+        color: gray;
+        padding: 10px 0 10px 10px;
+        font-size: 15px;
+    }
+    
+    #navbar a:hover {
+        background-color: hsl(0, 0%, 90%);
+    }
+
+    main {
+        margin: 0px 10px 0 150px;
+        padding: 0;
+    }
+}
